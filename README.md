@@ -96,3 +96,7 @@ Since, sometimes the algorithm did not reach the best solution (sometimes also a
 I avoided to put the numbers after comma when the distance was already high.
 
 This results are obtained using a number of generations that depends on the size of the problem.
+
+### Other informations
+
+The code is computationally intensive to complete. Feel free to reduce the number of generations if you need a less time-consuming approach. Throughout the project, I collaborated with Stefano Fumero, consulting with him on various implementation decisions.
