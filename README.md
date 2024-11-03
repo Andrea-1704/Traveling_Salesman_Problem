@@ -22,7 +22,7 @@ segments = [
 ]
 ```
 
-The greedy algorithm simply start from a starting city, and continue taking the nearest city to the current one, until all the cities are reached.
+The greedy algorithm simply starts from a starting city, and continue taking the nearest city to the current one, until all the cities are reached.
 
 A snapshot of the code that performs that operation is here provided:
 
@@ -60,14 +60,14 @@ def fitness(solution):
     return tot_dist
 ```
 
-All the transformations used by the algorithm don't "invalidate" a solution, meaning that are designed to not violate the constraints of the problem, so there's no need to add other informations to the fitness function.
+All the transformations used by the algorithm do not "invalidate" a solution, meaning that are designed to not violate the constraints of the problem (if we start from a valid solution), so there's no need to add other informations to the fitness function.
 
 ### Mutation and crossover
-I considered the swap mutation and his variant (called in the code "mutation_strength"). These mutations functions provided the best solutions, among the others.
-For testing porpouse I also considered scramble mutation and inversion mutation.
+I considered the swap mutation and his variant (called in the code "mutation_strength"). These mutation functions provided the best solutions among the others.
+For a testing porpouse I also considered scramble mutation and inversion mutation, but avoided them.
 
 For the crossover, I used inver_over_crossover and inversion_crossover.
-For testing porpouse I also considered pmx crossover and order crossover.
+For a testing porpouse I also considered pmx crossover and order crossover.
 
 ### Parent selection
 For the parent selection I used tournament selection where tau, after a fine tuning process, is put as population_size/8.
@@ -77,10 +77,10 @@ For the initial population I considered the solution provided by the greedy algo
 I also tried considering "random solution" (also combined with the greedy ones), but this did not improve the results, so I decided to avoid it.
 
 ### EA approach
-I tried all the possible EA approach and selected the __hyper modern approach__ because provided better results.
+I tried all the possibles EA approach and selected the __hyper modern approach__ because provided better results.
 
 ### Parameter selection
-Since, sometimes the algorithm did not reach the best solution (sometimes also after high value for the generations), the idea was to change the number of iteration of the code according to the problem size: in some dataset is better to continue running the same instance for a bigger number of generation. In others, instead, is better to execute more than once different instances of the same algorithm to reach to an optimum solution (as an improvement would be better to do it in parallel using threads).
+Since, sometimes the algorithm did not reach the best solution in a limited amount of time (sometimes also after high values for the generations number), the idea was to change the number of generations according to the problem size: in some dataset is better to continue running the same instance for a bigger number of generations. In others, instead, is better to execute more than once different instances of the same algorithm to reach to an optimum solution (as an improvement would be better to do it in parallel using threads).
 
 
 ## Results (EA)
@@ -93,9 +93,9 @@ Since, sometimes the algorithm did not reach the best solution (sometimes also a
 | US            | 40.204       |
 | China         | 55.804       |
 
-I avoided to put the numbers after comma when the distance was already high.
+I avoided to put the digits after comma when the distance was already high.
 
-This results are obtained using a number of generations that depends on the size of the problem.
+These results are obtained using a number of generations that depends on the size of the problem.
 
 ### Other informations
 
