@@ -89,7 +89,7 @@ Since, sometimes the algorithm did not reach the best solution in a limited amou
 |---------------|--------------|
 | Vanuatu       | 1.345,54     |
 | Italy         | 4.172,76     |
-| Russia        | 32.574       |
+| Russia        | 35.574       |
 | US            | 40.204       |
 | China         | 55.804       |
 
