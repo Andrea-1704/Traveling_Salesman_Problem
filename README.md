@@ -310,3 +310,7 @@ I avoid considering also the execution time since for this algorithm there was n
 ### Conclusions
 
 The code is computationally intensive to complete. Feel free to reduce the number of generations if you need a less time-consuming approach. Throughout the project, I collaborated with Stefano Fumero, consulting with him on various implementation decisions.
+
+
+## After reviews
+After the review received by Professor Giuseppe Esposito I followed his suggestion to be consistent with the English language, also for in-line comments.
