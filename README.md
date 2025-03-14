@@ -1,6 +1,6 @@
-# Traveling Salesman Problem
+# Travelling Salesman Problem
 
-In this project, I solved the Traveling Salesman Problem (TSP) by using a greedy algorithm and a genetic algorithm. 
+In this project, I solved the Travelling Salesman Problem (TSP) by using a greedy algorithm and a genetic algorithm. 
 
 The problem involves a salesman who needs to visit a set of cities, each exactly once, and return to the starting city. The goal is to find the shortest possible route that covers all cities and minimizes the travel distance (or cost, depending on the context).
 
