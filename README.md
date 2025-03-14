@@ -1,4 +1,4 @@
-# Traveling_Salesman_Problem
+# Traveling Salesman Problem
 
 In this project, I solved the Traveling Salesman Problem (TSP) by using a greedy algorithm and a genetic algorithm. 
 
